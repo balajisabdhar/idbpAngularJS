@@ -1,0 +1,56 @@
+.bx--grid{
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    padding: 0px;
+    height: 90%;
+}
+
+#leftPane{
+    border-right: 2px inset lightgray;
+    margin-top: 18px;
+}
+
+#rightPane{
+    margin-top: 18px;
+}
+
+#loginPane{
+    height: 100%;
+}
+
+.loginTitleBlock{
+    margin-top: 25px;
+}
+
+#loginTitle2Block{
+    margin-top: 0px !important;
+    
+}
+
+#loginTitleBlk{
+    padding-bottom: 25px;
+    margin-left: 50px;
+    border-bottom: 2px lightgrey;
+    border-bottom-style: inset;
+}
+
+#usernameBlock,#passwordBlock{
+    padding-bottom: 25px;
+    margin-left: 48px;
+    margin-top: 25px;
+    position: relative;
+    top: 0px;
+    width: 87%;
+    width: 90%;
+}
+
+#passwordBlock{
+    margin-top: 0px !important;
+}
+
+#HelpDesk{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 48px;
+}
