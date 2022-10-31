@@ -1,16 +1,13 @@
 ### STAGE 1: Build ###
-FROM alpine:3.15 AS build
-
-ENV NODE_VERSION 14.20.1
-####FROM node:14.15.3 
+FROM node:14-alpine3.15 AS build
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
 RUN npm run build
 ### STAGE 2: Run ###
-###FROM nginx:alpine
+###FROM nginx:1.17.1-alpine
 FROM nginxinc/nginx-unprivileged
 
 ### COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /usr/src /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/idbp-partner-portal /usr/share/nginx/html
