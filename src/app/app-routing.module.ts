@@ -7,6 +7,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { IdbpComponentComponent } from './idbp-component/idbp-component.component';
 
 const routes: Routes = [
+  { path: '', component: LoginPageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'dashboard', component: DashboardPageComponent },
   { path: 'idbp', component: IdbpComponentComponent },
