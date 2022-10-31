@@ -10,4 +10,12 @@ RUN npm run build
 FROM nginxinc/nginx-unprivileged
 
 ### COPY nginx.conf /etc/nginx/nginx.conf
+RUN cd /usr/src
+RUN ls
+RUN cd app
+RUN ls
+RUN cd dist
+RUN ls
+RUN cd carbon-angular-tutorial
+RUN ls
 COPY --from=build /usr/src/app/dist/carbon-angular-tutorial /usr/share/nginx/html
