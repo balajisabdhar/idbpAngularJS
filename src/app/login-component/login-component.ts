@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
 
   goToDashboard(){
     
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/idbp']);
   
   }
 }
