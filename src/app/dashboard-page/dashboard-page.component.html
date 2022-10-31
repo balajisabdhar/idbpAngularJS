@@ -1,0 +1,48 @@
+<div id="dashboardPage">
+    <app-header></app-header>
+    <app-dashboard-title id="dashboardTitle"></app-dashboard-title>
+    <div ibmGrid id="menuBlock1">
+        <div ibmRow>
+            <div ibmCol>
+                <app-menu-block [tileName]="'IBM Digital Banking Platform'" [tileLink]="'/idbp'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'API Factory'" [tileDescription]="'Dynamically generate API Code and Deploy'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'ACE Microservices Factory'" [tileDescription]="'Dynamically generate Microservices Code and Deploy'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'Manage Services'" [tileDescription]="'Manage Services in IDBP Platform'"></app-menu-block>
+            </div>
+        </div>
+        <div ibmRow id="menuBlock2">
+            <div ibmCol>
+                <app-menu-block [tileName]="'Integration Modernization'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'Sandbox'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'Operation Automation'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'Data Governance and Security'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+        </div>
+        <div ibmRow id="menuBlock3">
+            <div ibmCol>
+                <app-menu-block [tileName]="'Settings'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                <app-menu-block [tileName]="'Connect'" [tileDescription]="'Description'"></app-menu-block>
+            </div>
+            <div ibmCol>
+                
+            </div>
+            <div ibmCol>
+                
+            </div>
+        </div>
+    </div>
+</div>

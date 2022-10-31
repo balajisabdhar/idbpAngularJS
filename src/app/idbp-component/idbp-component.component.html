@@ -1,0 +1,24 @@
+<div id="idbpPage">
+    <app-header></app-header>
+    <app-page-title-template [pagetitle]="'IBM Digital Banking Platform'" id="dashboardTitle"></app-page-title-template>
+    <a id="backId" href="/dashboard" ibmLink>Back</a>
+    <div ibmGrid id="menuBlock1">
+        <div ibmRow>
+            <div ibmCol>
+                
+            </div>
+            <div ibmCol>
+               <app-tile-template [tileIcon]="'../../assets/image/piggy-bank.svg'" [tileLink]="'/dashboard'" [tileName]="'Retail Banking'"></app-tile-template>
+            </div>
+            <div ibmCol>
+                <app-tile-template [tileIcon]="'../../assets/image/piggy-bank--slot.svg'" [tileLink]="''" [tileName]="'Corporate Banking'"></app-tile-template>
+            </div>
+            <div ibmCol>
+                <app-tile-template [tileIcon]="'../../assets/image/settings--services.svg'" [tileLink]="''" [tileName]="'BAAS(Banking As Service)'"></app-tile-template>
+            </div>
+            <div ibmCol>
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DashboardPageComponent } from '../dashboard-page/dashboard-page.component';
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-component',
@@ -8,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  goToDashboard(){
+    
+    this.router.navigate(['/dashboard']);
+  
+  }
 }
