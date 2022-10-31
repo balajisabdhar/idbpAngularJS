@@ -1,5 +1,8 @@
 ### STAGE 1: Build ###
-FROM node:14.15.3 AS build
+FROM alpine:3.15 AS build
+
+ENV NODE_VERSION 14.20.1
+####FROM node:14.15.3 
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
