@@ -10,4 +10,4 @@ RUN npm run build
 FROM nginxinc/nginx-unprivileged
 
 ### COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /usr/src/app/dist/idbp-partner-portal /usr/share/nginx/html
+COPY --from=build /usr/src /usr/share/nginx/html
