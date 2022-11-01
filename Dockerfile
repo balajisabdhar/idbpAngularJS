@@ -1,16 +1,14 @@
 ### STAGE 1: Build ###
 FROM node:14-alpine3.15 AS build
 WORKDIR /usr/src/app
-RUN ls
-COPY * ./
-COPY package.json package-lock.json ./
-RUN npm install
 COPY . .
-RUN npm run build
+RUN npm install
+RUN ng build
 ### STAGE 2: Run ###
-###FROM nginx:1.17.1-alpine
-FROM nginxinc/nginx-unprivileged
+# FROM nginx:1.17.1-alpine
+####FROM nginxinc/nginx-unprivileged
 
-### COPY nginx.conf /etc/nginx/nginx.conf
+FROM nginx
 
 COPY --from=build /usr/src/app/dist/carbon-angular-tutorial /usr/share/nginx/html
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
