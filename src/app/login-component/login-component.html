@@ -5,6 +5,7 @@
           <h3 class="loginTitleBlock">Log In</h3>
           <p class="loginTitleBlock" id="loginTitle2Block">Don't have an account? <a href="#" ibmLink>Create an IBMId</a></p>
         </div>
+        <form>
         <div id="usernameBlock">
           <div >
             <span style="color:gray">IBMId</span>
@@ -12,7 +13,7 @@
           </div>
           <div>
             
-            <input style="margin-top:10px;border: 1px solid grey;" ibmtext="" placeholder="Username" autocomplete="on" class="bx--text-input" id="ibm-label-0">
+            <input name="username" [(ngModel)]="username" style="margin-top:10px;border: 1px solid grey;" ibmtext="" placeholder="Username" autocomplete="on" class="bx--text-input" id="ibm-label-0">
 		
           </div>
         </div>
@@ -23,11 +24,12 @@
           </div>
           <div>
             
-            <input style="margin-top:10px;border: 1px solid grey;" ibmtext="" placeholder="Password" autocomplete="on" class="bx--text-input" id="ibm-label-0">
+            <input  name="password" [(ngModel)]="password" style="margin-top:10px;border: 1px solid grey;" ibmtext="" placeholder="Password" autocomplete="on" class="bx--text-input" id="ibm-label-0">
 		
           </div>
         </div>
-        <button style="width:100%;margin-left: 100px;" (click)="goToDashboard()" class="bx--btn bx--btn--primary">Log in</button>
+        <button style="width:100%;margin-left: 100px;" (click)="userLogin()" class="bx--btn bx--btn--primary">Log in</button>
+      </form>
         <div id="HelpDesk">
           <div>Need help?<a href="#" ibmLink>Contact IBM Help desk</a></div>
         </div>

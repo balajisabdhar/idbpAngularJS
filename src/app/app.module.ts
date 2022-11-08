@@ -15,6 +15,8 @@ import { MenuBlockComponent } from './menu-block/menu-block.component';
 import { IdbpComponentComponent } from './idbp-component/idbp-component.component';
 import { PageTitleTemplateComponent } from './page-title-template/page-title-template.component';
 import { TileTemplateComponent } from './tile-template/tile-template.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { TileTemplateComponent } from './tile-template/tile-template.component';
     IconModule,
     GridModule,
     SearchModule,
-    TilesModule
+    TilesModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
